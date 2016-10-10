@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" rowHeight="45" id="kGl-YC-uGQ" customClass="TableTreeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kGl-YC-uGQ" id="1s9-E7-YIv">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6PA-ye-OYk">
+                        <rect key="frame" x="62" y="12" width="42" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView tag="102" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="hlR-Vp-fqA">
+                        <rect key="frame" x="26" y="6" width="32" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" id="RaM-44-6ux" customClass="CustomSeparator">
+                        <rect key="frame" x="0.0" y="44" width="320" height="1"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView tag="101" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plusAccessory" id="HSE-5B-98r">
+                        <rect key="frame" x="2" y="9" width="24" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" id="6Vo-Yv-mtD">
+                        <rect key="frame" x="276" y="7" width="36" height="36"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                    </imageView>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box" id="IIc-hp-0MQ">
+                        <rect key="frame" x="232" y="7" width="36" height="36"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                    </imageView>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="properties" id="oSs-7T-vNa">
+                        <rect key="frame" x="240" y="7" width="36" height="36"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageView" destination="hlR-Vp-fqA" id="cCa-xA-48O"/>
+                <outlet property="labelTitle" destination="6PA-ye-OYk" id="msC-YT-B8G"/>
+                <outlet property="plusImageView" destination="HSE-5B-98r" id="vkk-WM-5Sp"/>
+                <outlet property="propertiesImageView" destination="oSs-7T-vNa" id="jQz-1c-ZBN"/>
+                <outlet property="separator" destination="RaM-44-6ux" id="Kim-xz-h6V"/>
+                <outlet property="talkImageView" destination="6Vo-Yv-mtD" id="3gC-Pn-sA6"/>
+                <outlet property="tickImageView" destination="IIc-hp-0MQ" id="L0O-Ag-TRc"/>
+            </connections>
+            <point key="canvasLocation" x="425" y="286.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="box" width="24" height="24"/>
+        <image name="chat" width="24" height="24"/>
+        <image name="plusAccessory" width="24" height="24"/>
+        <image name="properties" width="24" height="24"/>
+    </resources>
+</document>
